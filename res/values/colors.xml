@@ -1,0 +1,23 @@
+<resources>
+
+    <color name="black_overlay">#66000000</color>
+    <color name="facebook_blue">#3B5998</color>
+    <color name="bottom_item">#f44</color>
+    <color name="bottom_item_alt">#c00</color>
+    <color name="translucent_black">#c0000000</color>
+    <color name="semi_white">#70ffffff</color>
+    <color name="light_grey">#d3d3d3</color>
+    <color name="light_red">#e74c3c</color>
+    <color name="light_green">#2ecc71</color>
+    <color name="light_yellow">#f1c40f</color>
+    <color name="progress_gray">#FFD8D8D8</color>
+    <color name="progress_gray_dark">#FF383838</color>
+
+     <color name="excellent">#00e400</color>
+     <color name="good">#ffff00</color>
+     <color name="lightly_polluted">#ff7e00</color>
+     <color name="moderately_polluted">#ff0000</color>
+     <color name="heavily_polluted">#99004c</color>
+     <color name="severely_polluted">#7e0023</color>
+    
+</resources>

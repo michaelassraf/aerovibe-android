@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Aerovibe</string>
+    <string name="facebook_application_id">118847424939120</string>
+    <string name="user_log_in_title">Log In</string>
+    <string name="event_creation_name_hint">Your Event Name</string>
+    <string name="login_user_login_email_hint">Your email address</string>
+    <string name="login_user_login_password_hint">Your password</string>
+    <string name="event_creation_location_hint">Where is the event taking place ?</string>
+    <string name="event_type_hint">What are you celebrating ?</string>
+    <string name="event_creation_description_hint">"What's the agenda ?</string>
+    <string name="event_creation_start_date_hint">Pick a time</string>
+    <string name="event_creation_start_hour_hint">Pick hour</string>
+    <string name="reset_button_text">Reset</string>
+    <string name="commit_button_text">Go !</string>
+    <string name="user_sign_up_title">Sign Up</string>
+    <string name="gender_hint">Please select your geneder</string>
+</resources>

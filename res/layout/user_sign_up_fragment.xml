@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@drawable/rounded_edges"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/user_sign_up_holder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="5dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="5dp"
+        android:textAlignment="center" >
+
+        <TextView
+            android:id="@+id/user_signup_title"
+            style="@android:style/TextAppearance.Medium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@drawable/rounded_edges"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="@string/user_sign_up_title"
+            android:textColor="@android:color/white" />
+
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="5dp"
+                android:textAlignment="center" >
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center" >
+
+                    <FrameLayout
+                        android:id="@+id/user_signup_profile_picture_holder"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@android:color/transparent" >
+
+                        <ImageView
+                            android:id="@+id/user_signup_profile_picture"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_gravity="bottom"
+                            android:background="@color/translucent_black" />
+
+                        <TextView
+                            style="@android:style/TextAppearance.Medium"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_gravity="bottom"
+                            android:background="@android:color/transparent"
+                            android:gravity="center"
+                            android:text="Long press to select an image"
+                            android:textColor="@android:color/black" />
+                    </FrameLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_below="@+id/user_signup_profile_picture_holder"
+                        android:orientation="vertical"
+                        android:padding="15dp" >
+
+                        <EditText
+                            android:id="@+id/user_signup_email"
+                            style="@android:style/TextAppearance.Medium"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:hint="Your email address"
+                            android:inputType="textEmailAddress"
+                            android:textColor="@android:color/black"
+                            android:textColorHint="@android:color/black" >
+
+                            <requestFocus />
+                        </EditText>
+
+                        <EditText
+                            android:id="@+id/user_signup_password"
+                            style="@android:style/TextAppearance.Medium"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:hint="Your password"
+                            android:inputType="textPassword"
+                            android:textColor="@android:color/black"
+                            android:textColorHint="@android:color/black" />
+
+                        <EditText
+                            android:id="@+id/user_signup_first_name"
+                            style="@android:style/TextAppearance.Medium"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ems="10"
+                            android:gravity="center"
+                            android:hint="Your first name"
+                            android:inputType="textCapWords"
+                            android:textColor="@android:color/black"
+                            android:textColorHint="@android:color/black" />
+
+                        <EditText
+                            android:id="@+id/user_signup_last_name"
+                            style="@android:style/TextAppearance.Medium"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:hint="Your last name"
+                            android:inputType="textCapWords"
+                            android:textColor="@android:color/black"
+                            android:textColorHint="@android:color/black" />
+
+                        <Spinner
+                            android:id="@+id/user_signup_gender"
+                            style="@android:style/TextAppearance.Medium"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/trans_bkg"
+                            android:drawSelectorOnTop="true"
+                            android:entries="@array/genders"
+                            android:prompt="@string/gender_hint" />
+
+                        <TextView
+                            android:id="@+id/user_signup_birthday"
+                            style="@android:style/TextAppearance.Medium"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:textAlignment="center"
+                            android:textColor="@android:color/black"
+                            android:textColorHint="@android:color/black" />
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="5dp"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:padding="5dp"
+                    android:textAlignment="center" >
+
+                    <Button
+                        android:id="@+id/user_signup_reset"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:background="@drawable/rounded_edges"
+                        android:padding="5dp"
+                        android:text="@string/reset_button_text" />
+
+                    <Button
+                        android:id="@+id/user_signup_commit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:background="@drawable/rounded_edges"
+                        android:padding="5dp"
+                        android:text="@string/commit_button_text" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</FrameLayout>

@@ -1,0 +1,218 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <View
+        android:id="@+id/sensorFragmentAQIBackgroundView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/black" />
+
+    <ImageView
+        android:id="@+id/sensorFragmentBackgroundImageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/transparent" />
+
+    <com.lbis.aerovibe.views.components.SlidingUpPanelLayout
+        xmlns:sothree="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/sensorFragmentMainSlidingUpPanelLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/transparent"
+        android:gravity="bottom"
+        sothree:dragView="@+id/name"
+        sothree:panelHeight="68dp"
+        sothree:paralaxOffset="100dp"
+        sothree:shadowHeight="4dp" >
+
+        <FrameLayout
+            android:id="@+id/sensorFragmentFrameLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent" >
+
+            <RelativeLayout
+                android:id="@+id/sensorFragmentDetailsRelativeLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="top|left"
+                    android:gravity="top|left"
+                    android:orientation="vertical"
+                    android:padding="10dp" >
+
+                    <TextView
+                        android:id="@+id/sensorFragmentCityTextView"
+                        style="@style/WhiteTextWithBlackShadow"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:maxLines="999"
+                        android:text="sensorFragmentCityTextView"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/sensorFragmentCountryTextView"
+                        style="@style/WhiteTextWithBlackShadow"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/sensorFragmentCityFrameLayout"
+                        android:text="sensorFragmentCountryTextView" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical" >
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:padding="3dp" >
+
+                            <TextView
+                                android:id="@+id/sensorFragmentUpdateViewDateTextView"
+                                style="@style/WhiteTextWithBlackShadow"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="sensorFragmentUpdateDateTextView" />
+
+                            <TextView
+                                android:id="@+id/sensorFragmentUpdateViewTimeTextView"
+                                style="@style/WhiteTextWithBlackShadow"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="sensorFragmentUpdateTimeTextView" />
+
+                            <View
+                                android:layout_width="1dp"
+                                android:layout_height="match_parent"
+                                android:layout_margin="3dp"
+                                android:layout_marginTop="1dp"
+                                android:background="@android:color/white" />
+
+                            <TextView
+                                android:id="@+id/sensorFragmentPollutionLevelTextView"
+                                style="@style/WhiteTextWithBlackShadow"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="sensorFragmentUpdateTimeTextView" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            android:padding="3dp" >
+
+                            <TextView
+                                android:id="@+id/sensorFragmentAQILevelTextView"
+                                style="@style/WhiteTextWithBlackShadow"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:maxLines="999"
+                                android:text="sensorFragmentAQILevelTextView" />
+
+                            <TextView
+                                android:id="@+id/sensorFragmentAQILevelTitleTextView"
+                                style="@style/WhiteTextWithBlackShadow"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text=" Level" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </RelativeLayout>
+        </FrameLayout>
+
+        <LinearLayout
+            android:id="@+id/sensorFragmentBottomMainLinearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:gravity="top"
+            android:orientation="vertical"
+            android:padding="3dp" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/sensorFragmentDistanceMainTextView"
+                    style="@style/WhiteTextWithBlackShadow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top|left"
+                    android:gravity="top|left"
+                    android:text="sensorFragmentDistanceTextView" />
+
+                <LinearLayout
+                    android:id="@+id/sensorFragmentBottomMainDragLinearLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top|right"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/sensorFragmentDataProviderMainTitle"
+                        style="@style/WhiteTextWithBlackShadow"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:maxLines="999"
+                        android:text="sensorFragmentDataProviderTitle" />
+
+                    <ImageView
+                        android:id="@+id/sensorFragmentDataProviderMainImageView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:padding="3dp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <HorizontalScrollView
+                    android:id="@+id/sensorFragmentValuesHorizontalScrollView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:gravity="center"
+                    android:scrollbars="horizontal" >
+
+                    <LinearLayout
+                        android:id="@+id/sensorFragmentValuesLinearLayout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="top"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:padding="3dp" >
+                    </LinearLayout>
+                </HorizontalScrollView>
+            </LinearLayout>
+        </LinearLayout>
+    </com.lbis.aerovibe.views.components.SlidingUpPanelLayout>
+
+</FrameLayout>
